@@ -22,13 +22,13 @@ document.querySelector('#btn-login').addEventListener('click',async ()=>{
 
         //保存登录信息到本地
         const obj={
-            username: res.data.data.username,
-            token: res.data.data.token
+            username: res.data.username,
+            token: res.data.token
         }
         console.log(obj)
         localStorage.setItem('loginObj',JSON.stringify(obj))
 
-        showToast(res.data.message)
+        showToast(res.message)
         setTimeout(()=>{
             location.href='./index.html'
         },1500)

@@ -11,7 +11,7 @@ async function getData() {
         url: '/dashboard'
     })
     // console.log(res)
-    const overview = res.data.data.overview;
+    const overview = res.data.overview;
     Object.keys(overview).forEach(key => {
         document.querySelector(`.${key}`).innerHTML = overview[key]
     })
@@ -19,7 +19,7 @@ async function getData() {
 
     //没有拦截器时候的写法，try catch写请求头和处理token失效
 
-    
+
     // try{
     //     const res = await axios({
     //         url: '/dashboard'
