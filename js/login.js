@@ -33,6 +33,7 @@ document.querySelector('#btn-login').addEventListener('click',async ()=>{
             location.href='./index.html'
         },1500)
     }catch(err){
-        showToast(err.response.data.message)
+        // showToast(err.response.data.message)
+        console.dir(err)
     }
 })
