@@ -1,3 +1,5 @@
+showPassword()
+
 document.querySelector('#btn-login').addEventListener('click',async ()=>{
     const form=document.querySelector('.login-form');
     const data=serialize(form,{hash:true,empty:true})

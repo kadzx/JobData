@@ -1,3 +1,4 @@
+showPassword()
 document.querySelector('#btn-register').addEventListener('click',async ()=>{
     const form=document.querySelector('.register-form');
     const data=serialize(form,{hash:true,empty:true})
