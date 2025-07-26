@@ -1,8 +1,3 @@
-document.querySelector('.bi-eye-fill').addEventListener('click',()=>{
-    const psdInput=document.querySelector('#input-password');
-    psdInput.type= psdInput.type==='password'?'text':'password';
-})
-
 document.querySelector('#btn-register').addEventListener('click',async ()=>{
     const form=document.querySelector('.register-form');
     const data=serialize(form,{hash:true,empty:true})
@@ -22,9 +17,10 @@ document.querySelector('#btn-register').addEventListener('click',async ()=>{
     try{ 
         const res=await axios.post('/register',data)
         showToast(res.data.message)
+        setTimeout(()=>{
+            location.href='./login.html'
+        },1500)
     }catch(err){
         showToast(err.response.data.message)
     }
-
- 
 })
