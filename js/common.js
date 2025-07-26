@@ -1,1 +1,1 @@
-let a=10;
+axios.defaults.baseURL='https://hmajax.itheima.net';
