@@ -34,7 +34,7 @@ function renderUsername(loginObj){
 
 function registerLogout(){
     document.querySelector('#logout').addEventListener('click',()=>{
-    localStorage.clear('loginObj')
+    localStorage.removeItem('loginObj')
     showToast('退出登录成功');
     setTimeout(()=>{
         location.href='./login.html'
