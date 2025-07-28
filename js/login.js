@@ -37,3 +37,9 @@ document.querySelector('#btn-login').addEventListener('click',async ()=>{
         console.dir(err)
     }
 })
+document.addEventListener('keyup',e=>{
+    if(e.key==='Enter'){
+        document.querySelector('#btn-login').click();
+    }
+    
+})

@@ -25,3 +25,10 @@ document.querySelector('#btn-register').addEventListener('click',async ()=>{
         showToast(err.response.data.message)
     }
 })
+
+document.addEventListener('keyup',e=>{
+    if(e.key==='Enter'){
+        document.querySelector('#btn-login').click();
+    }
+    
+})

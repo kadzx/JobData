@@ -57,7 +57,7 @@ return Promise.reject(error);
 // 响应拦截器，统一处理浏览器响应
 axios.interceptors.response.use(response => {
 // Do something before response is sent
-console.log(response)
+// console.log(response)
 return response.data;
 },error => {
     console.dir(error)
