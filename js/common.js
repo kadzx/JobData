@@ -18,7 +18,7 @@ function showPassword(){
 //根据token检验是否登录
 function checkToken(){
     const loginObj=JSON.parse(localStorage.getItem('loginObj'))
-    console.log(loginObj)
+    // console.log(loginObj)
     if(!loginObj||!loginObj.token){
         showToast('请先登录在访问');
        setTimeout(()=>{
